@@ -31,6 +31,7 @@
    },
    "scripts": {
       "dev": "nodemon",
+      "start": "ts-node ./src/index.ts",
       "typeorm-gen": "ts-node ./node_modules/.bin/typeorm migration:generate -d ./src/migrations/ ",
       "typeorm-migrate": "ts-node ./node_modules/.bin/typeorm migration:run"
    }
