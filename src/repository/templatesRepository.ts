@@ -13,6 +13,7 @@ export class TemplatesRepository extends TypeORMRepository<Template>
   listByUser(userID: string): Promise<Template[] | undefined> {
     return getManager()
       .getRepository<Template>(Template)
-      .find({ where: { ownerID: userID } });
+      .find();
+      // .find({ where: { ownerID: userID } });
   }
 }
